@@ -2,15 +2,21 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "login backend services",
-  "main": "index.js",
+  "main": "index.ts",
+  "type": "module",
   "scripts": {
-    "start": "nodemon index.js",
+    "start": "nodemon",
+    "build": "npx tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Upamanyu Mukharji",
   "license": "ISC",
   "devDependencies": {
-    "nodemon": "^3.1.0"
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.12.7",
+    "nodemon": "^3.1.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
   },
   "dependencies": {
     "dotenv": "^16.4.5",
